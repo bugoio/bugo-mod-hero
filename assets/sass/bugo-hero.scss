@@ -8,7 +8,9 @@
  * @param myParam
  **/
 
-@import "bugo-hero-vars";
+ @import "bugo-hero-vars";
+ @debug "Loading Bugo Hero Module SASS";
+ @import "custom-variables";
 
  .hero {
   grid-area: hero;
@@ -118,7 +120,7 @@
       color: $hero-color;
       // font-weight: $hero-heading-weight;
     }
-
+    @debug "MATT: #{$hero-1}";
     @include heading-size(h1, $hero-1);
     @include heading-size(h2, $hero-2);
     @include heading-size(h3, $hero-3);
